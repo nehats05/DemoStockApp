@@ -81,10 +81,10 @@ public class StockHelper {
         if(stockModel.getQuarter() <= 0 || stockModel.getQuarter() > 4 )
             return false;
         else if(stockModel.getStock() == null || stockModel.getStock().equals("") ||
-                stockModel.getStock().matches("[A-Z]+") || stockModel.getStock().length()<5)
+                stockModel.getStock().matches("[^A-Z]+") || stockModel.getStock().length()>4)
             return false;
         else if(stockModel.getDate() == null || stockModel.getDate().equals("") ||
-                    stockModel.getDate().matches("(\\d{1,2}(\\/)\\d{1,2}(\\/)\\d{2,4})"))
+                    stockModel.getDate().matches("(\\^d{1,2}(\\/)\\^d{1,2}(\\/)\\^d{2,4})"))
             return false;
         return true;
     }
