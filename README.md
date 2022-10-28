@@ -56,7 +56,7 @@ Validate the input record against the composite keys and store in the database.
 	
 ### In the docker environment(mvn, java and docker should be installed):-
 	1. Clone the repo and run "mvn clean install"
-	2. Execute docker build -t <image-name> .
+	2. Execute docker build -t <imagename> .
 	3. Execute docker-compose up
 	4. Navigate to http://localhost:8081/swagger-ui/index.html to use our application
 
@@ -68,4 +68,5 @@ Validate the input record against the composite keys and store in the database.
 4. Filter for the composite keys or other attributes.
 5. Analytics for stock performance for the givven quarter.
 6. Development of UI for the operations.
-7. Updating docker to Podman as docker is not free for organisation more than 250 employees 
+7. Custom exception handlers
+8. Updating docker to Podman as docker is not free for organisation more than 250 employees 
