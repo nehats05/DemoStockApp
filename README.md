@@ -51,8 +51,10 @@ Validate the input record against the composite keys and store in the database.
 
 ### In local environment(make sure mvn and java is installed and configured in local):-
 	1. Clone the repo and run 'mvn clean install'
-	2. Run 'mvn spring-boot:run'
-	3. Navigate to 'http://localhost:8080/swagger-ui/index.html' to use our application
+	2. Login to MySQL and execute 'create database stockschema'
+	3. Create table in the database using the file schemadata.sql and run it.
+	4. Run 'mvn spring-boot:run'
+	5. Navigate to 'http://localhost:8080/swagger-ui/index.html' to use our application
 	
 ### In the docker environment(mvn, java and docker should be installed):-
 	1. Clone the repo and run "mvn clean install"
